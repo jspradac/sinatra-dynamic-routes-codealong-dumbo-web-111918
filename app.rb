@@ -13,6 +13,10 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
+  get "/multiply/:n1/:n2" do
+    "Boom #{(params[:n1]).to_i*(params[:n2]).to_i}!"
+  end
+
   # Code your final two routes here:
 
 end
